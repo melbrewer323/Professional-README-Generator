@@ -1,4 +1,4 @@
-# pro readme gen
+# Professional README Generator
 
   ========================
   ## Licensing:
@@ -18,14 +18,14 @@
   ## Description:
   _________________________
 
-  gen readme
+  To generate a simple README 
 
   
 
   ## Installation:
   _________________________
 
-  inq
+  Inquirer, NPM
 
   
 
@@ -40,4 +40,4 @@
  ______________________________
 
   - Github: [https://github.com/melbrewer323](https://github.com/https://github.com/melbrewer323)
-  - Email: melramire727@gmail.com
+  - Email: melramirez727@gmail.com
