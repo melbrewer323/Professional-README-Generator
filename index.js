@@ -13,18 +13,33 @@ const generateMarkdown = require('./generateMarkdown.js')
 const questions = [
     {
       type: 'input',
-      name: 'name',
-      message: 'What is the title of your project?',
+      name: 'title',
+      message: 'What is your project title?',
     },
     {
         type: 'input',
-        name: 'desc',
-        message: 'What is the description of the project?',
+        name: 'description',
+        message: 'What is the description of your project?',
     },
     {
         type: 'input',
-        name: 'required',
-        message: 'What installations are required?',
+        name: 'installation',
+        message: 'What needs to be installed?',
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'What was used?',
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'What are you requirements for contributions?',
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'What are your code examples for project test?',
     },
     {
         type: 'list',
@@ -46,24 +61,6 @@ const questions = [
   
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.writeFile(fileName, data, (err) => {
-    if (err)
-    throw err;
-    console.log("Readme file successfully created")
-  });
-};
 
-// TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions)
-  .then(function (userInput) {
-      writeToFile("README.md", generateMarkdown(userInput));
-  });
-};
-
-// Function call to initialize app
-init();
 
 
